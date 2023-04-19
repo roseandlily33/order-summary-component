@@ -51,10 +51,9 @@ main{
 }
  h1{
     color: var(--Darkblue);
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 0.5em;
     text-align: center;
-    
 }
 p{
    font-size: 0.8em;
@@ -66,29 +65,22 @@ p{
 }
 .options{
     display: flex;
-    font-size: 1em;
     align-items: center;
     justify-content: space-around;
     background-color: var(--Verypaleblue);
     border-radius: 25px;
     width: 90%;
     margin: 0 auto;
-    padding: 0.5em;
-    height: 15vh;
+    height: 5em;
 }
 .options img{
     float: left;
-    padding: 1em;
-    max-height: 100px;
-    max-width: 100px;
-
+    max-height: 50px;
+    max-width: 50px;
 }
 .options h2{
-    font-size: 0.8em;
-    
-}
-.middle{
-    padding: 1em;
+   text-align: center;
+   font-size: 0.8em;
 }
 #change{
     color: var(--Brightblue);
@@ -99,64 +91,47 @@ p{
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    padding: 2em;
+    padding-inline: 1em;
+    padding-block: 0.8em;
     font-size: 1em;
-   
 }
 #proceed{
     border: none;
-    border-radius: 25px;
+    border-radius: 15px;
     background-color: var(--Brightblue);
     color: var(--Verypaleblue);
     padding: 1.5em;
     text-align: center;
     width: 100%;
-
-
+    margin: 1em;
+}
+#proceed:hover{
+    opacity: 20%;
 }
 #cancel{
-    border-radius: 25px;
     padding: 1.5em;
     text-align: center;
-    width: 100%;
-    border: 1px solid var(--Paleblue);
+    border: none;
     background-color: transparent;
-    color: var(--Desaturatedblue);
-    
+    color: var(--Desaturatedblue); 
+}
+#cancel:hover{
+    color: var(--Darkblue);
 }
 @media screen and (min-width: 768px) {
+    body{
+        padding-top: 10%;
+        margin: 0 auto;
+    }
+    .container{  
+     width: 60vw;
+    height: 60wh;
+    }
     h1{
         font-size: 2em;
     }
     p{
         font-size: 1.3em;
     }
-    
-    .options img{
-        max-height: 150px;
-        max-width: 150px;
-    }
-    .options {
-        display: flex;
-        justify-content: space-between;
-    }
-    .options h2{
-        font-size: 1.3em;
-    }
-}
-@media screen and (min-width: 1026px){
-    
-    .options{
-        justify-content: space-evenly;
-        width: 90%;
-        height: 8vh;
-    }
-    .options img{
-        max-height: 150px;
-        max-width: 150px;
-    }
-    .options h2{
-        font-size: 1.4em;
-      
-    }
+   
 }
